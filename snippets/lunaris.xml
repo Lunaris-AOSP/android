@@ -26,10 +26,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="build/soong" name="Lunaris-AOSP/build_soong" groups="pdk,tradefed,sysui-studio" remote="lunaris" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
+  <project path="build/soong" name="Lunaris-AOSP/build_soong" groups="pdk,tradefed,sysui-studio" remote="lunaris" />
 
   <project path="art" name="Lunaris-AOSP/art" groups="pdk" remote="lunaris" />
 
