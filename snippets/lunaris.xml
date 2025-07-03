@@ -100,6 +100,7 @@
   <!-- AOSP Packages  -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="lunaris" />
   <project path="packages/apps/BtHelper" name="packages_apps_BtHelper" remote="lunaris" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="lunaris" />
   
   <!-- AOSP Modules  -->
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="lunaris" />
