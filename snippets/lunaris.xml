@@ -57,6 +57,7 @@
   <!-- External  -->
   <project path="external/bouncycastle" name="external_bouncycastle" groups="pdk" remote="lunaris" />
   <project path="external/avb" name="external_avb" groups="pdk" remote="lunaris" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" groups="pdk" remote="lunaris" />
   <project path="external/cronet" name="external_cronet" groups="pdk" remote="lunaris" />
   <project path="external/dtc" name="external_dtc" groups="pdk" remote="lunaris" />
   <project path="external/e2fsprogs" name="external_e2fsprogs" groups="pdk" remote="lunaris" />
@@ -65,6 +66,7 @@
   <project path="external/piex" name="external_piex" groups="pdk" remote="lunaris" />
   <project path="external/setupcompat" name="external_setupcompat" groups="pdk,sysui-studio" remote="lunaris" />
   <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="lunaris" />
+  <project path="external/lz4" name="external_lz4" groups="pdk" remote="lunaris" />
 
   <!-- CodeLinaro additions -->
   <project path="device/qcom/sepolicy_vndr/legacy-um" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,lahaina" revision="lineage-22.2-legacy-um" remote="LineageOS" />
