@@ -70,6 +70,7 @@
   <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lunaris" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="lunaris" />
   <project path="frameworks/opt/calendar" name="frameworks_opt_calendar" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk,sysui-studio" remote="lunaris" />
   <project path="frameworks/opt/colorpicker" name="frameworks_opt_colorpicker" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
   
   <!-- Hardware  -->
