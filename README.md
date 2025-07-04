@@ -33,3 +33,8 @@ https://github.com/Lunaris-AOSP/packages_apps_Settings/blob/f6c1759b737cd0ef835a
 ```bash
 ro.paranoid.maintainer=GHOST
 ```
+
+- Enable optimized dexopt tuning (default false)
+```bash
+TARGET_OPTIMIZED_DEXOPT := true
+```
