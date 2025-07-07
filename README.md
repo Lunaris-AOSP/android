@@ -38,3 +38,14 @@ ro.paranoid.maintainer=GHOST
 ```bash
 TARGET_OPTIMIZED_DEXOPT := true
 ```
+
+# Additional  
+Remove all cpuset configurations from the device tree under init/ and rootdir/.
+The ROM will handle CPU set management more efficiently.
+
+For example, remove any lines referencing paths like:
+/dev/cpuset/background/cpus or /dev/cpuset/restricted/cpus.
+```bash
+grep -r "/dev/cpuset/" .
+```
+Delete or clean up any related entries accordingly
