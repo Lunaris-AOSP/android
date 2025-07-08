@@ -154,6 +154,7 @@
 
   <!-- Vendor  -->
   <project path="vendor/extras" name="vendor_extras" remote="lunaris" />
+  <project path="vendor/fontbox" name="vendor_fontbox" remote="lunaris" />
   <project path="vendor/lineage" name="vendor_lineage" remote="lunaris" />
   <project path="vendor/OTA" name="OTA" remote="lunaris" />
   <project path="vendor/pixel-style" name="vendor_pixel-style" remote="lunaris" />
