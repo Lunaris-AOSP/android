@@ -146,6 +146,7 @@
   <project path="system/libhidl" name="system_libhidl" groups="pdk,sysui-studio" remote="lunaris" />
   <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" remote="lunaris" />
   <project path="system/logging" name="system_logging" groups="pdk" remote="lunaris" />
+  <project path="system/netd" name="system_netd" groups="pdk" remote="lunaris" />
   <project path="system/media" name="system_media" groups="pdk" remote="lunaris" />
   <project path="system/security" name="system_security" groups="pdk" remote="lunaris" />
   <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" groups="pdk" remote="lunaris" />
