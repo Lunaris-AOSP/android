@@ -104,6 +104,7 @@
   <project path="kernel/configs" name="kernel_configs" groups="vts,pdk" remote="lunaris" />
 
   <!-- lunaris Packages  -->
+  <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="lunaris" />
   <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="lunaris" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" groups="pdk-fs" remote="lunaris" />
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="lunaris" />
