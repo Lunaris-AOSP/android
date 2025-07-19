@@ -65,7 +65,7 @@
 
   <!-- CodeLinaro additions -->
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,qssi" remote="lunaris" />
-  <project path="device/qcom/sepolicy_vndr/legacy-um" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,lahaina" revision="lineage-22.2-legacy-um" remote="LineageOS" />
+  <project path="device/qcom/sepolicy_vndr/legacy-um" name="device_qcom_sepolicy_vndr" groups="qcom,lahaina" revision="16-um" remote="lunaris" />
   <project path="device/qcom/sepolicy_vndr/sm8450" name="device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="16" remote="lunaris-device" />
   <project path="hardware/qcom-caf/sm8150/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,msmnile" revision="lineage-22.2-caf-sm8150" remote="LineageOS" />
   <project path="hardware/qcom-caf/sm8150/display" name="LineageOS/android_hardware_qcom_display" groups="qcom" revision="lineage-22.2-caf-sm8150" remote="LineageOS" />
