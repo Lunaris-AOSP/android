@@ -686,7 +686,7 @@
   <project path="packages/apps/SampleLocationAttribution" name="platform/packages/apps/SampleLocationAttribution" groups="pdk-fs" />
   <project path="packages/apps/SecureElement" name="platform/packages/apps/SecureElement" groups="apps_se,pdk-fs,pdk-cw-fs" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" />
-  <project path="packages/apps/Stk" name="LineageOS/android_packages_apps_Stk" groups="apps_stk,pdk-fs" remote="LineageOS-23" />
+  <project path="packages/apps/Stk" name="platform/packages/apps/Stk" groups="apps_stk,pdk-fs" />
   <project path="packages/apps/StorageManager" name="platform/packages/apps/StorageManager" groups="pdk-fs" />
   <project path="packages/apps/SystemUIGo" name="platform/packages/apps/SystemUIGo" groups="pdk-fs" />
   <project path="packages/apps/Tag" name="LineageOS/android_packages_apps_Tag" groups="pdk-fs" remote="LineageOS-23" />
