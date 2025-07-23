@@ -146,14 +146,12 @@
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="lunaris" />
   <project path="system/bpf" name="system_bpf" groups="pdk" remote="lunaris" />
   <project path="system/chre" name="system_chre" groups="pdk" remote="lunaris" />
-  <project path="system/extras" name="system_extras" groups="pdk" remote="lunaris" />
   <project path="system/libhidl" name="system_libhidl" groups="pdk,sysui-studio" remote="lunaris" />
   <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" remote="lunaris" />
   <project path="system/keymaster" name="system_keymaster" groups="pdk" remote="lunaris" />
   <project path="system/logging" name="system_logging" groups="pdk" remote="lunaris" />
   <project path="system/netd" name="system_netd" groups="pdk" remote="lunaris" />
   <project path="system/security" name="system_security" groups="pdk" remote="lunaris" />
-  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" groups="pdk" remote="lunaris" />
   <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="lunaris" />
   <project path="system/vold" name="system_vold" groups="pdk" remote="lunaris" />
 
