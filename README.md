@@ -44,7 +44,39 @@ TARGET_OPTIMIZED_DEXOPT := true
 WITH_BCR := true
 ```
 
-## Additional  
+# Build flages
+
+- GMS
+```bash
+WITH_GMS := true
+```
+
+- Vanilla
+```bash
+WITH_GMS := false
+```
+
+- GMS CORE
+```bash
+TARGET_USES_CORE_GAPPS := true
+```
+
+- GMS OMNI
+```bash
+TARGET_USES_OMNI_GAPPS :=true
+```
+
+- Ship BCR
+```bash
+WITH_BCR := true
+```
+
+- Ship Launcher3 by Default quick switch
+```bash
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+```
+
+# Additional  
 Remove all cpuset configurations from the device tree under init/ and rootdir/.
 The ROM will handle CPU set management more efficiently.
 
