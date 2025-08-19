@@ -59,6 +59,7 @@
   <project path="external/bouncycastle" name="external_bouncycastle" groups="pdk" remote="lunaris" />
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" groups="pdk" remote="lunaris" />
   <project path="external/e2fsprogs" name="external_e2fsprogs" groups="pdk" remote="lunaris" />
+  <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" groups="pdk" remote="lunaris" />
   <project path="external/gptfdisk" name="external_gptfdisk" groups="pdk" remote="lunaris" />
   <project path="external/piex" name="external_piex" groups="pdk" remote="lunaris" />
   <project path="external/setupcompat" name="external_setupcompat" groups="pdk,sysui-studio" remote="lunaris" />
@@ -110,6 +111,7 @@
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" groups="pdk-fs" remote="lunaris" />
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="lunaris" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" groups="pdk-fs" remote="lunaris" />
+  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" groups="pdk-fs" remote="lunaris" />
   <project path="packages/apps/Singularity" name="packages_apps_Singularity" groups="pdk-fs,sysui-studio" remote="lunaris" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="lunaris" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" groups="pdk-fs" remote="lunaris" />
