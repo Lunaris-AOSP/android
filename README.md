@@ -34,7 +34,7 @@ https://github.com/Lunaris-AOSP/packages_apps_Settings/blob/0acd6251e20bacd8db58
 ro.paranoid.maintainer=GHOST
 ```
 
-- Enable optimized dexopt tuning (default false)
+- Enable optimized dexopt tuning (default false, Not recommend for low end device)
 ```bash
 TARGET_OPTIMIZED_DEXOPT := true
 ```
@@ -85,7 +85,15 @@ For example, remove any lines referencing paths like:
 ```bash
 grep -r "/dev/cpuset/" .
 ```
-Delete or clean up any related entries accordingly
+Delete or clean up any related entries accordingly, except audio-app
+
+
+## Low ram profile
+Low ram profile mode for low end devices to improve ram management 
+```bash
+TARGET_USE_LOWRAM_PROFILE := true
+```
+
 
 ## Setup Efficient freq hint(if using libpref)
 
