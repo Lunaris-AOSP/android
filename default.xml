@@ -67,6 +67,7 @@
   <project path="external/apache-velocity-engine" name="platform/external/apache-velocity-engine" groups="pdk" />
   <project path="external/apache-xml" name="platform/external/apache-xml" groups="pdk" />
   <project path="external/arm-neon-tests" name="platform/external/arm-neon-tests" groups="vendor" />
+  <project path="external/arm-optimized-routines" name="platform/external/arm-optimized-routines" groups="pdk" />
   <project path="external/arm-trusted-firmware" name="LineageOS/android_external_arm-trusted-firmware" groups="pdk" remote="LineageOS-23" />
   <project path="external/auto" name="platform/external/auto" groups="pdk" />
   <project path="external/autotest" name="platform/external/autotest" groups="pdk-fs" />
@@ -241,6 +242,7 @@
   <project path="external/javassist" name="platform/external/javassist" groups="pdk" />
   <project path="external/jazzer-api" name="platform/external/jazzer-api" groups="pdk" />
   <project path="external/jcommander" name="platform/external/jcommander" groups="pdk" />
+  <project path="external/jemalloc_new" name="platform/external/jemalloc_new" groups="pdk" />
   <project path="external/jetpack-camera-app" name="platform/external/jetpack-camera-app" groups="pdk" />
   <project path="external/jimfs" name="platform/external/jimfs" groups="pdk" />
   <project path="external/jline" name="platform/external/jline" groups="pdk,tradefed,pdk-fs" />
@@ -338,6 +340,7 @@
   <project path="external/lottie" name="platform/external/lottie" groups="pdk" />
   <project path="external/lua" name="platform/external/lua" groups="pdk" />
   <project path="external/ltp" name="platform/external/ltp" groups="vts,pdk" />
+  <project path="external/lz4" name="platform/external/lz4" groups="pdk" />
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk" />
   <project path="external/mbedtls" name="platform/external/mbedtls" groups="pdk" />
@@ -666,8 +669,11 @@
   <project path="packages/apps/CarrierConfig" name="platform/packages/apps/CarrierConfig" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/CellBroadcastReceiver" name="LineageOS/android_packages_apps_CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" remote="LineageOS-23" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" groups="pdk-fs" />
   <project path="packages/apps/DevCamera" name="platform/packages/apps/DevCamera" groups="pdk" />
   <project path="packages/apps/DeviceDiagnostics" name="platform/packages/apps/DeviceDiagnostics" groups="pdk" />
+  <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" groups="pdk-fs" />
+  <project path="packages/apps/DocumentsUI" name="platform/packages/apps/DocumentsUI" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo" groups="pdk-fs" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
@@ -676,6 +682,7 @@
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
   <project path="external/android_onboarding" name="platform/external/android_onboarding" groups="pdk-fs" />
+  <project path="packages/apps/Messaging" name="platform/packages/apps/Messaging" groups="pdk-fs" />
   <project path="packages/apps/Multiuser" name="platform/packages/apps/Multiuser" groups="pdk-fs" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="pdk-fs" />
@@ -864,6 +871,7 @@
   <project path="system/memory/libmeminfo" name="platform/system/memory/libmeminfo" groups="pdk" />
   <project path="system/memory/libmemtrack" name="platform/system/memory/libmemtrack" groups="pdk" />
   <project path="system/memory/libmemunreachable" name="platform/system/memory/libmemunreachable" groups="pdk" />
+  <project path="system/memory/lmkd" name="platform/system/memory/lmkd" groups="pdk" />
   <project path="system/memory/mmd" name="platform/system/memory/mmd" groups="pdk" />
   <project path="system/nvram" name="platform/system/nvram" groups="pdk" />
   <project path="system/secretkeeper" name="platform/system/secretkeeper" groups="pdk" />
@@ -879,6 +887,7 @@
   <project path="system/tools/mkbootimg" name="platform/system/tools/mkbootimg" groups="pdk" />
   <project path="system/tools/sysprop" name="platform/system/tools/sysprop" groups="pdk" />
   <project path="system/tools/xsdc" name="platform/system/tools/xsdc" groups="pdk" />
+  <project path="system/update_engine" name="LineageOS/android_system_update_engine" groups="pdk" remote="LineageOS-23" />
   <project path="system/unwinding" name="platform/system/unwinding" groups="pdk" />
   <project path="system/usb_info_tools" name="platform/system/usb_info_tools" groups="pdk" />
   <project path="system/vold" name="LineageOS/android_system_vold" groups="pdk" remote="LineageOS-23" />
@@ -959,7 +968,7 @@
   </project>
   <!-- END open-source projects -->
 
-  <include name="snippets/lunaris.xml" />
+  <include name="snippets/evolution.xml" />
   <include name="snippets/lineage.xml" />
   <include name="snippets/pixel.xml" />
 
