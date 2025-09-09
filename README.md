@@ -71,40 +71,8 @@ TARGET_USES_OMNI_GAPPS :=true
 WITH_BCR := true
 ```
 
-- Ship Launcher3 by Default quick switch
-```bash
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
-```
-
-# Additional  
-Remove all cpuset configurations from the device tree under init/ and rootdir/.
-The ROM will handle CPU set management more efficiently.
-
-For example, remove any lines referencing paths like:
-/dev/cpuset/background/cpus or /dev/cpuset/restricted/cpus.
-```bash
-grep -r "/dev/cpuset/" .
-```
-Delete or clean up any related entries accordingly, except audio-app
-
-
 ## Low ram profile
 Low ram profile mode for low end devices to improve ram management 
 ```bash
 TARGET_USE_LOWRAM_PROFILE := true
-```
-
-
-## Setup Efficient freq hint(if using libpref)
-
-How the Boost Works
-When a fling gesture or animation-heavy action (e.g., entering Quick Settings) is detected:
-
-The system enters a combined LAUNCH + FIXED_PERFORMANCE mode.
-These modes persist throughout the fling/animation duration, plus an additional 160ms buffer (for fling).
-Once the fling/animation ends, both hints are disabled.
-
-```bash
-https://github.com/AxionAOSP-devices/android_device_google_raviole/commit/cee1e28a7fdebfe4327d4e70a14e71c663f94ce8
-https://github.com/Pong-Development/device_nothing_Pong/commit/38ef69f5e90f11750141bffe43e5549c9d429db7
 ```
