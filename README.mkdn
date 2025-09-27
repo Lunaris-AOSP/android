@@ -1,36 +1,119 @@
-LineageOS
-===========
-
-Getting started
----------------
-
-To get started with Android/LineageOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
-
-To initialize your local repository using the LineageOS trees, use a command like this:
+# Initialize local repository
 ```
-repo init -u https://github.com/LineageOS/android.git -b lineage-23.0 --git-lfs
+repo init -u https://github.com/Lunaris-AOSP/android -b 16 --git-lfs
 ```
-Then to sync up:
+
+# Sync up
 ```
-repo sync
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
 
+# Build
 
-Submitting patches
-------------------
-Patches are always welcome! Please submit your patches via LineageOS Gerrit!
+- Set up the build environment
+```bash
+. b*/env*
+```
 
-Simply follow our guide on [how to submit patches](https://wiki.lineageos.org/submitting-patch-howto.html).
+- Lunch a target
+```bash
+lunch lineage_codename-bp2a-user
+```
 
-To view the status of your and others' patches, visit [LineageOS Gerrit Code Review](https://review.lineageos.org/).
+- To start compiling
+```bash
+m lunaris
+```
 
+- Bringup about (add in device tree settings overlay)
+```strings.xml
+https://github.com/Lunaris-AOSP/packages_apps_Settings/blob/0acd6251e20bacd8db589beb483d6138f553f02c/res/values/lunaris_strings.xml#L338
+```
 
-Buildbot
---------
+- Maintainer flag
+- Add in `system.prop`
+```system.prop
+ro.paranoid.maintainer=GHOST
+```
 
-All supported devices are built weekly and periodically as changes are committed to ensure the source trees remain buildable.
+- Enable optimized dexopt tuning (default false, Not recommend for low end device)
+```make
+TARGET_OPTIMIZED_DEXOPT := true
+```
 
-You can view the current build statuses at [LineageOS Buildkite](https://buildkite.com/lineageos).
+- Disable blur
+```make
+TARGET_ENABLE_BLUR := false
+```
 
-Builds produced weekly by the buildbot can be downloaded from [LineageOS downloads](https://download.lineageos.org/).
+- Enable BCR
+```make
+WITH_BCR := true
+```
+
+# Build flages
+
+- GMS
+```make
+WITH_GMS := true
+```
+
+- Vanilla
+```make
+WITH_GMS := false
+```
+
+- GMS CORE
+```make
+TARGET_USES_CORE_GAPPS := true
+```
+
+- GMS OMNI
+```make
+TARGET_USES_OMNI_GAPPS :=true
+```
+
+- Animation fix for mtk devices
+```make
+PERF_ANIM_OVERRIDE := true
+```
+
+- Allows charging while keeping the battery percentage fixed.
+If supported, you must also add a SELinux rule for the input_suspend node and kernel support 
+```make
+BYPASS_CHARGE_SUPPORTED := true
+```
+
+# Performance mode
+- If your device uses standard labels, add rules like this to your device tree `genfs_context`:
+
+```genfs_context
+genfscon proc /sys/vm/dirty_writeback_centisecs     u:object_r:proc_dirty:s0
+genfscon proc /sys/vm/vfs_cache_pressure            u:object_r:proc_drop_caches:s0
+genfscon proc /sys/vm/dirty_ratio                   u:object_r:proc_dirty:s0
+genfscon proc /sys/kernel/sched_migration_cost_ns   u:object_r:proc_sched:s0
+genfscon proc /sys/kernel/sched_pelt_multiplier     u:object_r:proc_sched:s0
+
+```
+
+- GPU boost
+- To allow boost framework to access your device gpu nodes, add genfs context for your node and label it as `sysfs_gpu`
+```genfs_context
+genfscon sysfs /devices/platform/1c500000.mali/available_frequencies                   u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/1c500000.mali/hint_min_freq                           u:object_r:sysfs_gpu:s0
+
+```
+
+- SEPolicy conflicts
+- If your device uses different OEM labels (common on MediaTek or Qualcomm), add `allow` rules instead of relabeling.
+```init.te
+allow init proc_vm_dirty:file rw_file_perms;
+allow init proc_dirty_ratio:file rw_file_perms;
+```
+
+# Lockscreen cpu info fix
+- Add in systemui `dimens.xml`
+```dimens.xml
+<!-- System Info -->
+<integer name="config_sysCPUTempMultiplier">1000</integer>
+```
