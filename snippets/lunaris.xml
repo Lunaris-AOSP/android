@@ -64,7 +64,10 @@
 
   <!-- CodeLinaro additions -->
   <project path="hardware/qcom-caf/sm8450/display" name="hardware_qcom-caf_sm8450_display" groups="qcom" revision="16" remote="lunaris-device" />
+
+  <!-- Hardware -->
   <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="lunaris" />
+  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk,sysui-studio" remote="lunaris" />
 
   <!-- Lineage SDK  -->
   <project path="lineage-sdk" name="lineage-sdk" remote="lunaris" />
