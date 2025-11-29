@@ -12,7 +12,7 @@
           fetch="https://codeberg.org/Ghosuto"
           sync-c="true"
           sync-j="4"
-          revision="refs/heads/bka" />
+          revision="refs/heads/16" />
 
   <remote name="lunaris-device"
           fetch="https://github.com/Pong-Development"
