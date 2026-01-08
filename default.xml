@@ -1019,6 +1019,6 @@
     <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
   </project>
 
-  <include name="snippets/crdroid.xml" />
+  <include name="snippets/lunaris.xml" />
   <include name="snippets/lineage.xml" />
 </manifest>
