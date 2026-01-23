@@ -73,6 +73,12 @@ TARGET_USES_OMNI_GAPPS :=true
 PERF_ANIM_OVERRIDE := true
 ```
 
+- refresh rate list (optional) - defining this flags makes the controller skip the parsing of Display.Mode refresh rates
+- for supported refresh rates. The refresh rate controller will also assume that all the defined refresh rates are "supported"
+```make
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,120,144
+```
+
 - Allows charging while keeping the battery percentage fixed.
 If supported, you must also add a SELinux rule for the input_suspend node and kernel support 
 ```make
