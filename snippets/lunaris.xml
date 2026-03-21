@@ -95,6 +95,8 @@
   <project path="system/update_engine" name="Lunaris-AOSP/system_update_engine" groups="pdk" remote="lunaris" />
   <project path="system/vold" name="Lunaris-AOSP/system_vold" groups="pdk" remote="lunaris" />
 
+  <project path="toolchain/pgo-profiles" name="Lunaris-AOSP/toolchain_pgo-profiles" groups="pdk" clone-depth="1" remote="lunaris" />
+
   <project path="vendor/extras" name="Lunaris-AOSP/vendor_extras" remote="lunaris" />
   <project path="vendor/certification" name="Lunaris-AOSP/vendor_certification" remote="lunaris" />
   <project path="vendor/lineage" name="Lunaris-AOSP/vendor_lineage" remote="lunaris" />
