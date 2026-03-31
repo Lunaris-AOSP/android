@@ -25,7 +25,7 @@ lunch lineage_codename-bp4a-user
 m bacon
 ```
 
-- Paintainer prop (define in system/product prop)
+- Maintainer prop (define in system/product prop)
 ```prop
 ro.lunaris.maintainer=GHOST | ゴースト
 ```
@@ -60,6 +60,11 @@ WITH_BCR := true
 ```make
 $(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
 $(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+```
+
+- Surface flinger boosting (Smoother scrolling, fewer frame drops but Keeps CPU slightly “awake”)
+```make
+SURFACE_FLINGER_BOOST := true
 ```
 
 - Whether the device supports Smart Pixels(frameworks overlay)
