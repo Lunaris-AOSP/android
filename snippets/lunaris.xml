@@ -58,6 +58,7 @@
   <project path="kernel/configs" name="Lunaris-AOSP/kernel_configs" groups="vts,pdk" remote="lunaris" />
 
   <project path="lineage-sdk" name="Lunaris-AOSP/lineage-sdk" remote="lunaris" />
+  <project path="axion-sdk" name="Lunaris-AOSP/axion-sdk" remote="lunaris" />
   <project path="libcore" name="Lunaris-AOSP/libcore" groups="pdk" remote="lunaris" />
 
   <project path="packages/apps/AxThemeStore" name="Lunaris-AOSP/packages_apps_AxThemeStore" remote="lunaris" />
@@ -85,6 +86,7 @@
   <project path="packages/modules/Connectivity" name="Lunaris-AOSP/packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
   <project path="packages/modules/Permission" name="Lunaris-AOSP/packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
   <project path="packages/modules/Wifi" name="Lunaris-AOSP/packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lunaris" />
+  <project path="packages/services/AxQuickLook" name="Lunaris-AOSP/packages_services_AxQuickLook" remote="lunaris" />
   <project path="packages/services/DeviceAsWebcam" name="Lunaris-AOSP/packages_services_DeviceAsWebcam" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
   <project path="packages/services/OmniJaws" name="Lunaris-AOSP/packages_services_OmniJaws" remote="lunaris" />
   <project path="packages/services/Telecomm" name="Lunaris-AOSP/packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
