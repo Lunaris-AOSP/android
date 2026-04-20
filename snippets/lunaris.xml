@@ -85,6 +85,7 @@
   <project path="packages/modules/Bluetooth" name="Lunaris-AOSP/packages_modules_Bluetooth" groups="pdk" remote="lunaris" />
   <project path="packages/modules/Connectivity" name="Lunaris-AOSP/packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
   <project path="packages/modules/Permission" name="Lunaris-AOSP/packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
+  <project path="packages/modules/StatsD" name="Lunaris-AOSP/packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
   <project path="packages/modules/Wifi" name="Lunaris-AOSP/packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lunaris" />
   <project path="packages/services/AxQuickLook" name="Lunaris-AOSP/packages_services_AxQuickLook" remote="lunaris" />
   <project path="packages/services/DeviceAsWebcam" name="Lunaris-AOSP/packages_services_DeviceAsWebcam" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
