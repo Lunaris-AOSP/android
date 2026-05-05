@@ -35,12 +35,6 @@ ro.lunaris.maintainer=GHOST | ゴースト
 https://github.com/Pong-Development/device_nothing_Pong/blob/luna/overlay/pong/NTSettingsResTarget/res/values/lunaris_strings.xml
 ```
 
-- Refresh rate list (optional) - defining this flags makes the controller skip the parsing of Display.Mode refresh rates
-- For supported refresh rates. The refresh rate controller will also assume that all the defined refresh rates are "supported"
-```make
-TARGET_SUPPORTED_REFRESH_RATES := 60,90,120,144
-```
-
 - If device support UDFPS
 ```make
 TARGET_CUSTOM_UDFPS := true
@@ -51,9 +45,24 @@ TARGET_CUSTOM_UDFPS := true
 WITH_GMS := true
 ```
 
-- For bcr
+- Use aosp telephony
 ```make
-WITH_BCR := true
+TARGET_SUPPORTS_GOOGLE_TELEPHONY := false
+```
+
+- Use aosp gallery
+```make
+TARGET_USE_GPHOTOS := false
+```
+
+- Disable live wallpaper and other
+```make
+TARGET_USE_WALLPAPERS := false
+```
+
+- Use X reality engine (careful with mtk, causes display stuck issue)
+```make
+USE_REALITY_ENGINE := true
 ```
 
 - Set surfaceflinger refreshrate
@@ -65,12 +74,6 @@ $(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 - Surface flinger boosting (Smoother scrolling, fewer frame drops but Keeps CPU slightly “awake”)
 ```make
 SURFACE_FLINGER_BOOST := true
-```
-
-- Whether the device supports Smart Pixels(frameworks overlay)
-```make
-<!-- Whether the device supports Smart Pixels -->
-<bool name="config_supportSmartPixels">true</bool>
 ```
 
 - Limit AOD refreshrate (SystemUI overlay)
