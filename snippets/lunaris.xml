@@ -43,6 +43,7 @@
   <project path="external/bouncycastle" name="Lunaris-AOSP/external_bouncycastle" groups="pdk" remote="lunaris" />
   <project path="external/FadingEdgeLayout" name="Lunaris-AOSP/external_FadingEdgeLayout" remote="lunaris" />
   <project path="external/jemalloc_new" name="Lunaris-AOSP/external_jemalloc_new" groups="pdk" remote="lunaris" />
+  <project path="external/scudo" name="Lunaris-AOSP/external_scudo" groups="pdk" remote="lunaris" />
 
   <project path="frameworks/av" name="Lunaris-AOSP/frameworks_av" groups="pdk,sysui-studio" remote="lunaris" />
   <project path="frameworks/base" name="Lunaris-AOSP/frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lunaris" />
