@@ -105,6 +105,7 @@
   <project path="toolchain/pgo-profiles" name="Lunaris-AOSP/toolchain_pgo-profiles" groups="pdk" clone-depth="1" remote="lunaris" />
 
   <project path="vendor/extras" name="Lunaris-AOSP/vendor_extras" remote="lunaris" />
+  <project path="vendor/prebuilts" name="Lunaris-AOSP/vendor_prebuilts" remote="lunaris" />
   <project path="vendor/certification" name="Lunaris-AOSP/vendor_certification" remote="lunaris" />
   <project path="vendor/lineage" name="Lunaris-AOSP/vendor_lineage" remote="lunaris" />
   <project path="vendor/gms" name="GhosutoX/vendor_gms_lunaris" remote="lunaris-gitlab" />
