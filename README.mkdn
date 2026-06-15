@@ -47,7 +47,22 @@ WITH_GMS := true
 
 - Use aosp telephony
 ```make
-TARGET_SUPPORTS_GOOGLE_TELEPHONY := false
+WITH_GMS_COMMS_SUITE := false
+```
+
+- Disable pixel launcher
+```make
+WITH_PIXEL_LAUNCHER := false
+```
+
+- Build google maps
+```make
+TARGET_USE_MAPS := true
+```
+
+- Build google files
+```make
+TARGET_USE_FILES := true
 ```
 
 - Use aosp gallery
