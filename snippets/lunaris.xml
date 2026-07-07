@@ -73,6 +73,7 @@
   <project path="packages/apps/LMOFreeform" name="Lunaris-AOSP/packages_apps_LMOFreeform" remote="lunaris" />
   <project path="packages/apps/Matlog" name="Lunaris-AOSP/packages_apps_Matlog" remote="lunaris" />
   <project path="packages/apps/Messaging" name="Lunaris-AOSP/packages_apps_Messaging" groups="pdk-fs" remote="lunaris" />
+  <project path="packages/apps/NOSAtmosphereEffect" name="Lunaris-AOSP/packages_apps_NOSAtmosphereEffect" remote="lunaris" />
   <project path="packages/apps/OmniStyle" name="Lunaris-AOSP/packages_apps_OmniStyle" remote="lunaris" />
   <project path="packages/apps/Sandbox" name="Lunaris-AOSP/packages_apps_Sandbox" remote="lunaris" />
   <project path="packages/apps/Settings" name="Lunaris-AOSP/packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="lunaris" />
