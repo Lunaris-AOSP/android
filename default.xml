@@ -307,7 +307,7 @@
   <project path="external/libgav1" name="platform/external/libgav1" groups="pdk" remote="aosp" />
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" remote="aosp" />
   <project path="external/libhevc" name="platform/external/libhevc" groups="pdk" remote="aosp" />
-  <project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" groups="pdk" remote="aosp" />
+  <!--<project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" groups="pdk" remote="aosp" />-->
   <project path="external/libjxl" name="LineageOS/android_external_libjxl" groups="pdk" />
   <project path="external/libkmsxx" name="platform/external/libkmsxx" groups="pdk" remote="aosp" />
   <project path="external/liblc3" name="platform/external/liblc3" groups="pdk" remote="aosp" />
@@ -433,7 +433,7 @@
   <project path="external/pogreb" name="platform/external/pogreb" groups="pdk" remote="aosp" />
   <project path="external/private-join-and-compute" name="platform/external/private-join-and-compute" groups="pdk" remote="aosp" />
   <project path="external/protobuf" name="platform/external/protobuf" groups="pdk,sysui-studio" remote="aosp" />
-  <project path="external/pthreadpool" name="platform/external/pthreadpool" groups="pdk" remote="aosp" />
+  <!--<project path="external/pthreadpool" name="platform/external/pthreadpool" groups="pdk" remote="aosp" />-->
   <project path="external/puffin" name="platform/external/puffin" groups="pdk" remote="aosp" />
   <project path="external/python/absl-py" name="platform/external/python/absl-py" groups="pdk" remote="aosp" />
   <project path="external/python/apitools" name="platform/external/python/apitools" groups="pdk" remote="aosp" />
@@ -525,7 +525,7 @@
   <project path="external/speex" name="platform/external/speex" groups="pdk" remote="aosp" />
   <project path="external/SPIRV-Headers" name="platform/external/SPIRV-Headers" groups="pdk" remote="aosp" />
   <project path="external/SPIRV-Tools" name="platform/external/SPIRV-Tools" groups="pdk" remote="aosp" />
-  <project path="external/sqlite" name="LineageOS/android_external_sqlite" groups="pdk" />
+  <!--<project path="external/sqlite" name="LineageOS/android_external_sqlite" groups="pdk" />-->
   <project path="external/spdx-tools" name="platform/external/spdx-tools" groups="pdk" remote="aosp" />
   <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="pdk" remote="aosp" />
   <project path="external/starlark-go" name="platform/external/starlark-go" groups="pdk" remote="aosp" />
@@ -536,7 +536,7 @@
   <project path="external/swiftshader" name="platform/external/swiftshader" groups="pdk" remote="aosp" />
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk" remote="aosp" />
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk" remote="aosp" />
-  <project path="external/tensorflow" name="platform/external/tensorflow" groups="pdk" remote="aosp" />
+  <!--<project path="external/tensorflow" name="platform/external/tensorflow" groups="pdk" remote="aosp" />-->
   <project path="external/TestParameterInjector" name="platform/external/TestParameterInjector" groups="pdk" remote="aosp" />
   <project path="external/testng" name="platform/external/testng" groups="pdk" remote="aosp" />
   <project path="external/tflite-support" name="platform/external/tflite-support" groups="pdk" remote="aosp" />
@@ -589,7 +589,7 @@
   <project path="external/xz-embedded" name="platform/external/xz-embedded" groups="pdk" remote="aosp" />
   <project path="external/xz-java" name="platform/external/xz-java" groups="pdk" remote="aosp" />
   <project path="external/yapf" name="platform/external/yapf" groups="vts,projectarch,pdk" remote="aosp" />
-  <project path="external/zlib" name="platform/external/zlib" groups="pdk" remote="aosp" />
+  <!--<project path="external/zlib" name="platform/external/zlib" groups="pdk" remote="aosp" />-->
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk" remote="aosp" />
   <project path="external/zstd" name="LineageOS/android_external_zstd" />
   <project path="external/zucchini" name="platform/external/zucchini" groups="pdk" remote="aosp" />
