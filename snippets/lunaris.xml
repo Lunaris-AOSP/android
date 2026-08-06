@@ -99,6 +99,7 @@
   <project path="packages/services/Telephony" name="Lunaris-AOSP/packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
 
   <project path="system/core" name="Lunaris-AOSP/system_core" groups="pdk" remote="lunaris" />
+  <project path="system/media" name="Lunaris-AOSP/system_media" groups="pdk" remote="lunaris" />
   <project path="system/sepolicy" name="Lunaris-AOSP/system_sepolicy" groups="pdk" remote="lunaris" />
   <project path="system/memory/libmeminfo" name="Lunaris-AOSP/system_memory_libmeminfo" groups="pdk" remote="lunaris" />
   <project path="system/update_engine" name="Lunaris-AOSP/system_update_engine" groups="pdk" remote="lunaris" />
