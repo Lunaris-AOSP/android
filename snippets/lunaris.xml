@@ -7,6 +7,24 @@
            sync-j="4"
            revision="refs/heads/16.2" />
 
+  <remote  name="lunaris-sett"
+           fetch="https://github.com/"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/test" />
+
+  <remote  name="lunaris-base"
+           fetch="https://github.com/"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/test" />
+
+  <remote  name="ghosuto"
+           fetch="https://github.com/"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/17" />
+
   <remote  name="lunaris-gitlab"
            fetch="https://gitlab.com/"
            sync-c="true"
@@ -30,11 +48,11 @@
 
   <project path="art" name="Lunaris-AOSP/art" groups="pdk" remote="lunaris" />
 
-  <project path="bionic" name="Lunaris-AOSP/bionic" groups="pdk" remote="lunaris" />
+  <project path="bionic" name="Lunaris-Stagging/bionic" groups="pdk" remote="lunaris-sett" revision="test" />
 
   <project path="bootable/recovery" name="Lunaris-AOSP/bootable_recovery" groups="pdk" remote="lunaris" />
 
-  <project path="device/lineage/sepolicy" name="Lunaris-AOSP/device_lineage_sepolicy" remote="lunaris" />
+  <project path="device/lineage/sepolicy" name="Lunaris-AOSP/device_lineage_sepolicy" remote="lunaris" revision="test"/>
 
   <project path="external/arm-optimized-routines" name="Lunaris-AOSP/external_arm-optimized-routines" groups="pdk" remote="lunaris" />
   <project path="external/bouncycastle" name="Lunaris-AOSP/external_bouncycastle" groups="pdk" remote="lunaris" />
@@ -48,41 +66,45 @@
   <project path="external/zlib-ng" name="Lunaris-AOSP/external_zlib-ng" groups="pdk" remote="lunaris" />
 
   <project path="frameworks/av" name="Lunaris-AOSP/frameworks_av" groups="pdk,sysui-studio" remote="lunaris" />
-  <project path="frameworks/base" name="Lunaris-AOSP/frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lunaris" />
+  <project path="frameworks/base" name="Lunaris-Stagging/frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lunaris-base" revision="old" />
   <project path="frameworks/libs/systemui" name="Lunaris-AOSP/frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lunaris" />
-  <project path="frameworks/native" name="Lunaris-AOSP/frameworks_native" groups="pdk" remote="lunaris" />
+  <project path="frameworks/native" name="Lunaris-AOSP/frameworks_native" groups="pdk" remote="lunaris" revision="test"/>
   <project path="frameworks/opt/net/wifi" name="Lunaris-AOSP/frameworks_opt_net_wifi" groups="pdk,sysui-studio" remote="lunaris" />
   <project path="frameworks/opt/telephony" name="Lunaris-AOSP/frameworks_opt_telephony" groups="pdk,sysui-studio" remote="lunaris" />
 
   <project path="hardware/interfaces" name="Lunaris-AOSP/hardware_interfaces" groups="pdk,sysui-studio" remote="lunaris" />
+  <project path="hardware/lineage/interfaces" name="Lunaris-AOSP/hardware_lineage_interfaces" remote="lunaris" />
 
   <project path="hardware/qcom-caf/sm8450/display" name="Pong-Development/hardware_qcom-caf_sm8450_display" groups="qcom" revision="16" />
 
   <project path="kernel/configs" name="Lunaris-AOSP/kernel_configs" groups="vts,pdk" remote="lunaris" />
 
-  <project path="lineage-sdk" name="Lunaris-AOSP/lineage-sdk" remote="lunaris" />
-  <project path="axion-sdk" name="Lunaris-AOSP/axion-sdk" remote="lunaris" />
+  <project path="lineage-sdk" name="Lunaris-AOSP/lineage-sdk" remote="lunaris" revision="test" />
+  <project path="axion-sdk" name="Lunaris-Stagging/axion-sdk" remote="lunaris-sett" revision="test" />
   <project path="libcore" name="Lunaris-AOSP/libcore" groups="pdk" remote="lunaris" />
 
-  <project path="packages/apps/AppLocker" name="Lunaris-AOSP/packages_apps_AppLocker" remote="lunaris" />
+  <project path="packages/apps/AppLocker" name="Lunaris-AOSP/packages_apps_AppLocker" remote="lunaris" revision="test" />
   <project path="packages/apps/AxThemeStore" name="Lunaris-AOSP/packages_apps_AxThemeStore" remote="lunaris" />
   <project path="packages/apps/ColumbusService" name="Lunaris-AOSP/packages_apps_ColumbusService" remote="lunaris" />
-  <project path="packages/apps/Singularity" name="Lunaris-AOSP/packages_apps_Singularity" remote="lunaris" />
+  <project path="packages/apps/Singularity" name="Lunaris-Stagging/packages_apps_Singularity" remote="lunaris-sett" revision="test"/>
   <project path="packages/apps/DeskClock" name="Lunaris-AOSP/packages_apps_DeskClock" groups="pdk-fs" remote="lunaris" />
-  <project path="packages/apps/Dialer" name="Lunaris-AOSP/packages_apps_Dialer" groups="pdk-fs" remote="lunaris" />
+  <project path="packages/apps/Dialer" name="Ghosuto/packages_apps_Dialer" groups="pdk-fs" remote="ghosuto" />
   <project path="packages/apps/DocumentsUI" name="Lunaris-AOSP/packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
   <project path="packages/apps/FaceUnlock" name="Lunaris-AOSP/packages_apps_FaceUnlock" remote="lunaris" />
-  <project path="packages/apps/GameSpace" name="Lunaris-AOSP/packages_apps_GameSpace" remote="lunaris" />
-  <project path="packages/apps/Launcher3" name="Lunaris-AOSP/packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="lunaris" />
+  <project path="packages/apps/GameSpace" name="Lunaris-AOSP/packages_apps_GameSpace" remote="lunaris" revision="test" />
+  <project path="packages/apps/Launcher3" name="Lunaris-AOSP/packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="lunaris" revision="test" />
   <project path="packages/apps/LineageParts" name="Lunaris-AOSP/packages_apps_LineageParts" remote="lunaris" />
   <project path="packages/apps/LMOFreeform" name="Lunaris-AOSP/packages_apps_LMOFreeform" remote="lunaris" />
   <project path="packages/apps/Matlog" name="Lunaris-AOSP/packages_apps_Matlog" remote="lunaris" />
+  <project path="packages/apps/LockStyles" name="Lunaris-Stagging/packages_apps_LockStyles" remote="lunaris-sett" revision="17" />
   <project path="packages/apps/Messaging" name="Lunaris-AOSP/packages_apps_Messaging" groups="pdk-fs" remote="lunaris" />
   <project path="packages/apps/OmniStyle" name="Lunaris-AOSP/packages_apps_OmniStyle" remote="lunaris" />
-  <project path="packages/apps/Sandbox" name="Lunaris-AOSP/packages_apps_Sandbox" remote="lunaris" />
-  <project path="packages/apps/Settings" name="Lunaris-AOSP/packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="lunaris" />
+  <project path="packages/apps/LunarisMonet" name="Lunaris-AOSP/packages_apps_LunarisMonet" groups="pdk-fs" remote="lunaris" />
+  <project path="packages/apps/Sandbox" name="Lunaris-AOSP/packages_apps_Sandbox" remote="lunaris" revision="test" />
+  <project path="packages/apps/Settings" name="Lunaris-Stagging/packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="lunaris-sett" revision="test" />
   <project path="packages/apps/SettingsIntelligence" name="Lunaris-AOSP/packages_apps_SettingsIntelligence" groups="pdk-fs" remote="lunaris" />
   <project path="packages/apps/SetupWizard" name="Lunaris-AOSP/packages_apps_SetupWizard" remote="lunaris" />
+  <project path="packages/apps/OptimizationEngine" name="Lunaris-Stagging/packages_apps_OptimizationEngine" remote="lunaris-sett" revision="17"/>
   <project path="packages/apps/ThemePicker" name="Lunaris-AOSP/packages_apps_ThemePicker" groups="pdk-fs,sysui-studio" remote="lunaris" />
   <project path="packages/apps/Updater" name="Lunaris-AOSP/packages_apps_Updater" remote="lunaris" />
   <project path="packages/apps/WallpaperPicker2" name="Lunaris-AOSP/packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="lunaris" />
@@ -98,9 +120,9 @@
   <project path="packages/services/Telecomm" name="Lunaris-AOSP/packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
   <project path="packages/services/Telephony" name="Lunaris-AOSP/packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
 
-  <project path="system/core" name="Lunaris-AOSP/system_core" groups="pdk" remote="lunaris" />
+  <project path="system/core" name="Lunaris-AOSP/system_core" groups="pdk" remote="lunaris" revision="test" />
   <project path="system/media" name="Lunaris-AOSP/system_media" groups="pdk" remote="lunaris" />
-  <project path="system/sepolicy" name="Lunaris-AOSP/system_sepolicy" groups="pdk" remote="lunaris" />
+  <project path="system/sepolicy" name="Lunaris-AOSP/system_sepolicy" groups="pdk" remote="lunaris" revision="test" />
   <project path="system/memory/libmeminfo" name="Lunaris-AOSP/system_memory_libmeminfo" groups="pdk" remote="lunaris" />
   <project path="system/update_engine" name="Lunaris-AOSP/system_update_engine" groups="pdk" remote="lunaris" />
   <project path="system/vold" name="Lunaris-AOSP/system_vold" groups="pdk" remote="lunaris" />
@@ -110,7 +132,7 @@
   <project path="vendor/extras" name="Lunaris-AOSP/vendor_extras" remote="lunaris" />
   <project path="vendor/prebuilts" name="Lunaris-AOSP/vendor_prebuilts" remote="lunaris" />
   <project path="vendor/certification" name="Lunaris-AOSP/vendor_certification" remote="lunaris" />
-  <project path="vendor/lineage" name="Lunaris-AOSP/vendor_lineage" remote="lunaris" />
+  <project path="vendor/lineage" name="Lunaris-AOSP/vendor_lineage" remote="lunaris" revision="test" />
   <project path="vendor/pixel/extract-utils" name="GhosutoX/vendor_pixel_extract-utils" remote="lunaris-gitlab" >
     <linkfile src="extract-all.sh" dest="vendor/pixel/extract-all.sh" />
   </project>
