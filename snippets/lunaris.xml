@@ -42,7 +42,7 @@
 
   <project path="art" name="Lunaris-AOSP/art" groups="pdk" remote="lunaris" />
 
-  <project path="bionic" name="Lunaris-AOSP/bionic" groups="pdk" remote="lunaris" />
+  <project path="bionic" name="Lunaris-Stagging/bionic" groups="pdk" remote="lunaris-sett" revision="test" />
 
   <project path="bootable/recovery" name="Lunaris-AOSP/bootable_recovery" groups="pdk" remote="lunaris" />
 
@@ -72,14 +72,14 @@
 
   <project path="kernel/configs" name="Lunaris-AOSP/kernel_configs" groups="vts,pdk" remote="lunaris" />
 
-  <project path="lineage-sdk" name="Lunaris-AOSP/lineage-sdk" remote="lunaris" />
+  <project path="lineage-sdk" name="Lunaris-AOSP/lineage-sdk" remote="lunaris" revision="test" />
   <project path="axion-sdk" name="Lunaris-AOSP/axion-sdk" remote="lunaris" />
   <project path="libcore" name="Lunaris-AOSP/libcore" groups="pdk" remote="lunaris" />
 
   <project path="packages/apps/AppLocker" name="Lunaris-AOSP/packages_apps_AppLocker" remote="lunaris" />
   <project path="packages/apps/AxThemeStore" name="Lunaris-AOSP/packages_apps_AxThemeStore" remote="lunaris" />
   <project path="packages/apps/ColumbusService" name="Lunaris-AOSP/packages_apps_ColumbusService" remote="lunaris" />
-  <project path="packages/apps/Singularity" name="Lunaris-AOSP/packages_apps_Singularity" remote="lunaris" revision="test"/>
+  <project path="packages/apps/Singularity" name="Lunaris-Stagging/packages_apps_Singularity" remote="lunaris-sett" revision="test"/>
   <project path="packages/apps/DeskClock" name="Lunaris-AOSP/packages_apps_DeskClock" groups="pdk-fs" remote="lunaris" />
   <project path="packages/apps/Dialer" name="Lunaris-AOSP/packages_apps_Dialer" groups="pdk-fs" remote="lunaris" />
   <project path="packages/apps/DocumentsUI" name="Lunaris-AOSP/packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
