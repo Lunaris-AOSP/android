@@ -95,6 +95,7 @@
   <project path="packages/apps/Settings" name="Lunaris-Stagging/packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="lunaris-sett" />
   <project path="packages/apps/SettingsIntelligence" name="Lunaris-AOSP/packages_apps_SettingsIntelligence" groups="pdk-fs" remote="lunaris" />
   <project path="packages/apps/SetupWizard" name="Lunaris-AOSP/packages_apps_SetupWizard" remote="lunaris" />
+  <project path="packages/apps/OptimizationEngine" name="Lunaris-Stagging/packages_apps_OptimizationEngine" remote="lunaris-sett" revision="17"/>
   <project path="packages/apps/ThemePicker" name="Lunaris-AOSP/packages_apps_ThemePicker" groups="pdk-fs,sysui-studio" remote="lunaris" />
   <project path="packages/apps/Updater" name="Lunaris-AOSP/packages_apps_Updater" remote="lunaris" />
   <project path="packages/apps/WallpaperPicker2" name="Lunaris-AOSP/packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="lunaris" />
@@ -110,7 +111,7 @@
   <project path="packages/services/Telecomm" name="Lunaris-AOSP/packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
   <project path="packages/services/Telephony" name="Lunaris-AOSP/packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="lunaris" />
 
-  <project path="system/core" name="Lunaris-AOSP/system_core" groups="pdk" remote="lunaris" />
+  <project path="system/core" name="Lunaris-AOSP/system_core" groups="pdk" remote="lunaris" revision="test" />
   <project path="system/media" name="Lunaris-AOSP/system_media" groups="pdk" remote="lunaris" />
   <project path="system/sepolicy" name="Lunaris-AOSP/system_sepolicy" groups="pdk" remote="lunaris" revision="test" />
   <project path="system/memory/libmeminfo" name="Lunaris-AOSP/system_memory_libmeminfo" groups="pdk" remote="lunaris" />
