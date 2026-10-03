@@ -60,7 +60,7 @@
   <project path="external/zlib-ng" name="Lunaris-AOSP/external_zlib-ng" groups="pdk" remote="lunaris" />
 
   <project path="frameworks/av" name="Lunaris-AOSP/frameworks_av" groups="pdk,sysui-studio" remote="lunaris" />
-  <project path="frameworks/base" name="Ghosuto/base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lunaris-base" />
+  <project path="frameworks/base" name="Lunaris-Stagging/frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lunaris-base" revision="old" />
   <project path="frameworks/libs/systemui" name="Lunaris-AOSP/frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lunaris" />
   <project path="frameworks/native" name="Lunaris-AOSP/frameworks_native" groups="pdk" remote="lunaris" revision="test"/>
   <project path="frameworks/opt/net/wifi" name="Lunaris-AOSP/frameworks_opt_net_wifi" groups="pdk,sysui-studio" remote="lunaris" />
@@ -73,7 +73,7 @@
   <project path="kernel/configs" name="Lunaris-AOSP/kernel_configs" groups="vts,pdk" remote="lunaris" />
 
   <project path="lineage-sdk" name="Lunaris-AOSP/lineage-sdk" remote="lunaris" revision="test" />
-  <project path="axion-sdk" name="Lunaris-Stagging/axion-sdk" remote="lunaris-sett" revision="17" />
+  <project path="axion-sdk" name="Lunaris-Stagging/axion-sdk" remote="lunaris-sett" revision="test" />
   <project path="libcore" name="Lunaris-AOSP/libcore" groups="pdk" remote="lunaris" />
 
   <project path="packages/apps/AppLocker" name="Lunaris-AOSP/packages_apps_AppLocker" remote="lunaris" />
