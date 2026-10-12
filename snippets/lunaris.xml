@@ -11,7 +11,7 @@
            fetch="https://github.com/"
            sync-c="true"
            sync-j="4"
-           revision="refs/heads/ui2" />
+           revision="refs/heads/test" />
 
   <remote  name="lunaris-base"
            fetch="https://github.com/"
@@ -23,7 +23,7 @@
            fetch="https://github.com/"
            sync-c="true"
            sync-j="4"
-           revision="refs/heads/test" />
+           revision="refs/heads/17" />
 
   <remote  name="lunaris-gitlab"
            fetch="https://gitlab.com/"
@@ -95,7 +95,7 @@
   <project path="packages/apps/LineageParts" name="Lunaris-AOSP/packages_apps_LineageParts" remote="lunaris" />
   <project path="packages/apps/LMOFreeform" name="Lunaris-AOSP/packages_apps_LMOFreeform" remote="lunaris" />
   <project path="packages/apps/Matlog" name="Lunaris-AOSP/packages_apps_Matlog" remote="lunaris" />
-  <project path="packages/apps/LockStyles" name="Lunaris-AOSP/packages_apps_LockStyles" remote="lunaris-sett" />
+  <project path="packages/apps/LockStyles" name="Lunaris-Stagging/packages_apps_LockStyles" remote="lunaris-sett" revision="17" />
   <project path="packages/apps/Messaging" name="Lunaris-AOSP/packages_apps_Messaging" groups="pdk-fs" remote="lunaris" />
   <project path="packages/apps/OmniStyle" name="Lunaris-AOSP/packages_apps_OmniStyle" remote="lunaris" />
   <project path="packages/apps/Sandbox" name="Lunaris-AOSP/packages_apps_Sandbox" remote="lunaris" revision="test" />
